@@ -1,0 +1,27 @@
+{{ "<!-- jQuery -->" | safeHTML }}
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+{{ "<!-- Bootstrap Core JavaScript -->" | safeHTML }}
+<script src="{{ "js/bootstrap.min.js" | absURL }}"></script>
+{{ "<!-- Plugin JavaScript -->" | safeHTML }}
+<script src="{{ "js/jquery.easing.min.js" | absURL }}"></script>
+<script src="{{ "js/jquery.fittext.js" | absURL }}"></script>
+<script src="{{ "js/wow.min.js" | absURL }}"></script>
+{{ if .Site.Params.location }}
+<script src="//maps.googleapis.com/maps/api/js?key={{ .Site.Params.location.maps_api_key }}&v=3.exp"></script>
+<script src="{{ "js/hpneo.gmaps.js" | absURL }}"></script>
+<script src="{{ "js/gmaps.init.js" | absURL }}"></script>
+{{ end }}
+{{ "<!-- Custom Theme JavaScript -->" | safeHTML }}
+<script src="{{ "js/creative.js" | absURL }}"></script>
+<script src="{{ "js/respond.js" | absURL }}"></script>
+<script src="js/lib.js"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-110805969-1"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-110805969-1');
+</script>

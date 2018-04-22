@@ -1,0 +1,28 @@
+{{ "<!-- REGISTRATION -->" | safeHTML }}
+<section class="bg-primary" id="register">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 text-center">
+               {{ with .Site.Params.register.headline }}
+                    <h2 class="section-heading">{{ . }}</h2>
+                {{ end }}
+                {{ if and .Site.Params.register.headline .Site.Params.register.description1 }}
+                    <hr class="light">
+                {{ end }}
+                {{ with .Site.Params.register.description1 }}
+                    <p class="text">{{ . | markdownify }}</p>
+                {{ end }}
+                {{ with .Site.Params.register.description2 }}
+                    <p class="text">{{ . | markdownify }}</p>
+                {{ end }}
+                {{ with .Site.Params.register.address }}
+                    <p class="text">
+                        <a href="https://www.google.com/maps/place/Hill+City+Church/@37.583964,-77.4894047,17z/data=!3m1!4b1!4m5!3m4!1s0x89b11416742b7985:0x62966ae995cb9f8b!8m2!3d37.583964!4d-77.487216">
+                            {{ . | markdownify }}
+                        </a>
+                    </p>
+                {{ end }}
+            </div>
+        </div>
+    </div>
+</section>
