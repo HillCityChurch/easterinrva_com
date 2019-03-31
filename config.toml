@@ -1,56 +1,137 @@
-baseurl = "https://www.easterinrva.com"
+baseURL = "https://www.easterinrva.com"
 languageCode = "en-us"
-title = "Easter in RVA"
-theme = "hugo-creative-theme"
+title = "Hill City | Easter in RVA"
+theme = "navigator-hugo"
+
+# Build robots.txt file
+enableRobotsTXT = true
+# google analytics tracking id
 googleAnalytics = ""
 
+enableGitInfo = false
+pygmentsCodeFences = true
+
+# Multilangues setup
+# Renders the default content language in subdir, e.g. /en/. The root directory / will redirect to /en/
+defaultContentLanguageInSubdir = true
+DefaultContentLanguage = "en"
+
+# Site Params
 [params]
-	name = "Easter in RVA"
-	description = "At Hill City, our mission is to be a safe place for you to explore your faith. We'd be honored to have you during one of our Easter services this year!"
+    logo = "images/logo.png"
 
-	# The path must be relative to the static folder
-	favicon = "favicon.ico"
+    [[Params.listeLangues]]
+    code = "en"
 
-	# Navigation
-	[params.navigation]
-		brand = "Easter In RVA"
+# Gestion des langues : FR / EN / NL / DE
+[Languages]
+    ############# 2 - Site en ENGLISH
+    [Languages.en]
+    weight = 1
+    languageCode = "en-us"
+    title = "Easter in RVA"
+    dateFormat = "April 21, 2019"
 
-		[params.navigation.links]
-			register = "Join Us"
-			info = "Let Us Know"
-			expect = "What to Expect"
-			contest = "Best Day in RVA"
+    home = "Home"
+    logo = "images/logo.svg"
+    menufixed = false
 
+    footerDescription = "Hill City Church is a non denominational church in Richmond, Virginia. It is many things, but above all it is a safe place to explore your faith."
+    footerServiceTitle = "Services"
+    footerQuicklinkTitle = "Quicklinks"
+    footerAboutTitle = "About"
+    footerSubscribeTitle = "Subscribe"
 
-	# Hero section
-	[params.hero]
-		# To change the background of the hero section, replace the 'header.jpg' at './static/img' with your own.
-		slogan = " "
+    # Hero Area Section
+    [Languages.en.params.hero]
+        enable  = true
+        heading = "EASTER IN RVA"
+        description = "The greatest story of freedom and hope is the one we celebrate on Easter Sunday."
+        button  = true
+        btnText = "Join Us"
+        btnURL  = "https://"
+        videoThumb = "images/slider/video-player-thumb.jpg"
+        videoURL   = "https://www.youtube.com/embed/g3-VxLQO7do"
 
+    # About 2 Section
+    [Languages.en.params.aboutSm]
+        enable  = true
+        title   = "We can't wait to celebrate Easter in RVA this year, and you're invited!"
+        description = "Everyone's welcome and we'd love for you to invite your friends and family along. To help us prepare and accommodate, we ask that you register for your free tickets here. And don't worry, we won't run out! The tickets just help us create an awesome experience for you and all of our guests."
 
-	# Registration section
-	[params.register]
-		headline     = "Come join us!"
-		description1 = "Friday, March 30th: Good Friday / 6:00 & 7:30PM"
-		description2 = "Sunday, April 1st: Easter Sunday / 8:00, 9:30 & 11:00AM"
-		address = "2101 Maywill St, Richmond VA 23230"
+    [Languages.en.params.whatToExpect]
+        enable = true
+        title = "If this is your first time to Hill City or your first time in a while, we're so excited to see you!"
+        description1 = "Our services last for about 60 minutes, and the doors to our auditorium will open about 30 minutes beforehand. You can dress however you like! Your fancy Easter bonnet, or jeans and a t-shirt are fine by us. Once you arrive, our team will help you find a parking spot and guide you in the right direction."
+        description2 = "If you have kids, we'll direct you to our kids check-in where we have full Easter experiences for Infant-Elementary. Your morning cup of coffee is on us, too!"
+        description3 = "Want to listen to our past sermons?"
+        description4 = "We will have a Sign Language interpreter at the 9:30AM Easter service."
 
-	[params.info]
-		headline = "The greatest story of freedom and hope is the one we celebrate on Easter Sunday."
+    # Contact Section
+    [Languages.en.params.contact]
+        enable  = true
+        title   = "Visit or Find Us on the Web"
+        address = "2101 Maywill St, Richmond, VA 23226"
+        facebook= "https://www.facebook.com/hillcityrva/"
+        instagram= "https://www.instagram.com/hillcityrva/?hl=en"
+        mapLatitude = "51.507351"
+        mapLongitude= "-0.127758"
+        mapMarker   = "images/marker.png"
 
-	[params.expect]
-		headline = "What to Expect"
-		description1 = "If this is your first time to Hill City, or your first time in a while, we’re so excited to see you!"
-		description2 = "Our services last for about 60 minutes, and the doors to our auditorium will open about 30 minutes beforehand. You can dress however you like! Your fancy Easter bonnet, or jeans and a t-shirt are fine by us."
-		description3 = "Once you arrive, our team will help you find a parking spot and guide you in the right direction. If you have kids, we’ll direct you to our kids check-in where we have full Easter experiences for Infant-Elementary. Your morning cup of coffee is on us, too!"
-		sermonsLink = "http://hillcityrva.com/sermons"
+    # Call to Action Section on About Page
+    [Languages.en.params.cta]
+        enable  = true
+        bg      = "images/call-to-action/call-to-action-bg-2.jpg"
+        title   = "Let's Create Something Together"
+        subtitle= "Proin gravida nibh vel velit auctor aliquet. Aenean sollicudin bibendum auctor, <br> nisi elit consequat ipsum, nesagittis sem nid elit. Duis sed odio sitain elit."
+        btnText = "Contact Us"
 
-	# Footer section
-	[params.footer]
-		services	= "Sundays:<br>8:30, 9:45, 11:00 AM, 4:00 PM"
-		location	= "Hill City Church <br> 2101 Maywill St.<br>Richmond, VA 23230"
-		address		= "P.O. Box 18160<br>Richmond, VA 23226"
- 
-		[params.footer.socialMedia]
-			facebook  = "https://www.facebook.com/hillcityrva/"
-			instagram = "https://www.instagram.com/hillcityrva/?hl=en"
+# We Used Themefisher Icon font for Icon, for more details check this github repository - https://github.com/themefisher/themefisher-font
+
+# Site Menus
+[menu]
+    # Navbar Menus
+    [[menu.nav]]
+        name    = "SAVE YOUR SEAT"
+        url     = "register"
+        weight  = 2
+    [[menu.nav]]
+        name    = "ABOUT"
+        url     = "about"
+        weight  = 3
+    [[menu.nav]]
+        name    = "WHAT TO EXPECT"
+        url     = "expect"
+        weight  = 4
+
+    # Footer Service Menu
+    [[menu.service]]
+        name    = "graphicdesign"
+        url     = "service"
+        weight  = 1
+    [[menu.service]]
+        name    = "webdesign"
+        url     = "service"
+        weight  = 2
+    [[menu.service]]
+        name    = "webdevelopment"
+        url     = "service"
+        weight  = 3
+
+    # Footer Quick links Menu
+    [[menu.quicklink]]
+        name    = "hill city"
+        url     = "about"
+        weight  = 1
+    [[menu.quicklink]]
+        name    = "about"
+        url     = "about"
+        weight  = 2
+    [[menu.quicklink]]
+        name    = "faqs"
+        url     = "about"
+        weight  = 3
+    [[menu.quicklink]]
+        name    = "badges"
+        url     = "about"
+        weight  = 4
