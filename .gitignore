@@ -2,3 +2,4 @@ public
 *.pem
 *.crt
 *.cert
+.DS_Store
