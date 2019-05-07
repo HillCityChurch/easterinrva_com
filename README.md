@@ -1,4 +1,4 @@
-## Hill City RVA | www.christmasinrva.com
+## Hill City RVA | www.easterinrva.com
 
 Static site generated using [Hugo](https://gohugo.ion).
 
