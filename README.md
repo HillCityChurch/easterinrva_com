@@ -26,4 +26,4 @@ The live version of the site is hosted in Amazaon Web Services using a static S3
 
 <strong>Publisher:</strong> Hill City Church
 
-<strong>License:</strong> Source code is MIT, all images and copy text are copyrighted by Hill City Church. 2017
+<strong>License:</strong> Source code is MIT, all images and copy text are copyrighted by Hill City Church. 2019
