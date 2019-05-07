@@ -1,17 +1,17 @@
-enable  : true
-item  :
-  - icon  : tf-ion-ios-heart
-    title : Good Friday
-    description : >
-      Friday, April 19 5:30, 7:00PM
+enable: true
+item:
+  - icon: tf-ion-ios-heart
+    title: Good Friday
+    description: >
+      Friday, April 19 7:30PM
 
-  - icon  : tf-ion-android-sunny
-    title : Easter Sunday
-    description : >
-      Friday, April 21 8:00, 9:30 & 11:00AM
-  
-  - icon  : tf-ion-android-pin
-    title : Location
+  - icon: tf-ion-android-sunny
+    title: Easter Sunday
+    description: >
+      Sunday, April 21 8:00, 9:30 & 11:00AM
+
+  - icon: tf-ion-android-pin
+    title: Location
     link: https://goo.gl/maps/XpaSAVTVAyu
-    description : >
+    description: >
       2101 Maywill St, Richmond, VA 23226
